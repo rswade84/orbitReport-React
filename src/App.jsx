@@ -5,6 +5,8 @@ import { useState } from 'react';
 import satData from './components/satData';
 
 function App() {
+  // sat is used to compare changes in state
+  // setSat is used to update state
   const [sat, setSat] = useState(satData);
   const orbitTypes = [...new Set(satData.map((data) => data.orbitType))];
   // code continues ...
@@ -16,7 +18,7 @@ function App() {
     setSat(displaySats);
   };
   return (
-    <div>
+    <>
       <Banner />
       <Buttons
         filterByType={filterByType}
@@ -24,7 +26,7 @@ function App() {
         orbitTypes={orbitTypes}
       />
       <Table sat={sat} />
-    </div>
+    </>
   );
 }
 
