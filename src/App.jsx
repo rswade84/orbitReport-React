@@ -9,7 +9,6 @@ function App() {
   // setSat is used to update state
   const [sat, setSat] = useState(satData);
   const orbitTypes = [...new Set(satData.map((data) => data.orbitType))];
-  // code continues ...
 
   const filterByType = (currentType) => {
     const displaySats = satData.filter((newSatDisplay) => {
