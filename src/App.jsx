@@ -1,14 +1,21 @@
-import Buttons from "./components/Buttons";
-import Table from "./components/Table";
-
+import Buttons from './components/Buttons';
+import Table from './components/Table';
+import Banner from '../components/Banner';
+import useState from 'react';
+import satData from './components/satData';
 
 function App() {
-  return (
-    <div>
-      <Buttons />
-      <Table />
-    </div>
-  );
+  function App() {
+    const [sat, setSat] = useState(satData);
+    // code continues ...
+    return (
+      <div>
+        <Banner />
+        <Buttons />
+        <Table />
+      </div>
+    );
+  }
 }
 
 export default App;
