@@ -3,10 +3,10 @@ import satData from './satData';
 const Buttons = ({ filterByType, setSat, displaySats }) => {
   return (
     <div>
-      {displaySats.map((sat, id) => {
+      {orbitTypes.map((type, index) => {
         return (
-          <button onClick={() => filterByType(sat)} key={id}>
-            {sat} Orbit
+          <button onClick={() => filterByType(type)} key={index}>
+            {type} Orbit
           </button>
         );
       })}
