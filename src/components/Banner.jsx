@@ -1,5 +1,6 @@
 import './styling.css';
 
+// NOTE: This component is used in App.jsx...
 function Banner() {
   return (
     <div>

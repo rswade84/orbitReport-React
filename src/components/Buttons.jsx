@@ -1,6 +1,7 @@
 import satData from './satData.jsx';
 import './styling.css';
 
+// NOTE: This component is passed down as props to other components...
 const Buttons = ({ filterByType, setSat, orbitTypes }) => {
   return (
     <div className="flex-container">
