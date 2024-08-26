@@ -1,12 +1,13 @@
 import './styling.css';
 
-// NOTE: This component is used in App.jsx...
+// NOTE: Banner renders the header and paragraph elements in the application...
+// NOTE: The Banner component is used in the App component...
 function Banner() {
   return (
     <div>
       <header>
         <h1>Orbit Report</h1>
-        <p>Click on the buttons to see the satellites in that orbit type</p>
+        <p>Use the buttons below to see satellites in that orbit type</p>
       </header>
     </div>
   );
